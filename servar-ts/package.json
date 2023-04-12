@@ -1,0 +1,32 @@
+{
+  "name": "servar-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start:prod": "node ./dist/server.js",
+    "start": "concurrently \"npx tsc --watch\" \"nodemon -q ./dist/server.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3",
+    "react-bootstrap": "^2.7.2",
+    "sass": "^1.60.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.11",
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^5.0.3"
+  }
+}
